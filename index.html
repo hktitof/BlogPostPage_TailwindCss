@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Landing Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      let hello = "it's me :)";
+      hello = "today";
+      const showHello = () => {
+        console.log("this is your hello: ", hello);
+      };
+    </script>
+  </head>
+  <body class="font-body">
+    <div class="container px-4 mx-auto max-w-5xl">
+      <div class="text-center py-14 cursor-pointer" onclick="showHello()">
+        <h1 class="text-5xl fot-bold font-title text-sec">
+          Latest Blog<br />
+          <span class="text-prim">Posts</span>
+        </h1>
+        <p class="text-prim max-w-xs mx-auto py-6">
+          Welcome to our blog site. Get our latest news with just one search!
+        </p>
+        <input
+          class="bg-our-bg mx-auto px-6 py-2 rounded-3xl shadow-inner focus:outline-none focus:ring-2 ring-sec"
+          type="search"
+          placeholder="Search"
+        />
+      </div>
+      <section class="main">
+        <div class="grid grid-cols-3">
+          <!-- ? Featured Blog -->
+          <div class="col-span-3">
+            <a
+              href="#"
+              class="border border-gray-100 flex rounded-3xl overflow-hidden hover:shadow-xl transition duration-500"
+            >
+              <div class="w-1/2">
+                <img src="img/img1.jpg" alt="" />
+              </div>
+              <div class="w-1/2 p-7">
+                <span class="px-3 py-1 bg-our-bg rounded text-sec text-xs"
+                  >FEATURED</span
+                >
+                <h2
+                  class="font-bold text-prim text-2xl font-title py-3 transition duration-200 hover:text-sec cursor-default"
+                >
+                  Why is it important to follow a Brand Style Guide for your
+                  business?
+                </h2>
+                <p class="text-gen pb-5">
+                  A brand style guide is also known as a bran guide or bran
+                  book. For many companies, the guide is essential to maintain
+                  their brand identity. For them, such a well-thought-of guide
+                  becomes their key document, which serves as serves as a guide
+                  to create a variety of content for brand marketing.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="img/author1.jpg"
+                    alt=""
+                    class="w-9 h-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="font-bold text-prim">John Doe</h6>
+                    <p class="text-xs text-gen">Brant specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- ? List of blogs -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
