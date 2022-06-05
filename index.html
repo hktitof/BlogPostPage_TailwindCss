@@ -7,16 +7,16 @@
     <title>Blog Landing Page</title>
     <link rel="stylesheet" href="css/style.css" />
     <script>
-      let hello = "it's me :)";
-      hello = "today";
-      const showHello = () => {
-        console.log("this is your hello: ", hello);
-      };
+     //function that generates a number between 0 and 10000
+      function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
     </script>
   </head>
   <body class="font-body">
     <div class="container px-4 mx-auto max-w-5xl">
-      <div class="text-center py-14 cursor-pointer" onclick="showHello()">
+      <!-- ? INFORMATIONAL header -->
+      <div class="text-center py-14 cursor-pointer" ">
         <h1 class="text-5xl fot-bold font-title text-sec">
           Latest Blog<br />
           <span class="text-prim">Posts</span>
@@ -31,12 +31,13 @@
         />
       </div>
       <section class="main">
-        <div class="grid grid-cols-3">
-          <!-- ? Featured Blog -->
+        <!-- ? INFORMATIONAL Grid Element -->
+        <div class="grid grid-cols-3 gap-y-16 gap-x-12">
+          <!-- ? INFORMATIONAL Featured Blog, First row -->
           <div class="col-span-3">
             <a
               href="#"
-              class="border border-gray-100 flex rounded-3xl overflow-hidden hover:shadow-xl transition duration-500"
+              class="border border-gray-100 flex rounded-3xl overflow-hidden hover:shadow-lg transition duration-300"
             >
               <div class="w-1/2">
                 <img src="img/img1.jpg" alt="" />
@@ -46,7 +47,7 @@
                   >FEATURED</span
                 >
                 <h2
-                  class="font-bold text-prim text-2xl font-title py-3 transition duration-200 hover:text-sec cursor-default"
+                  class="card-heading"
                 >
                   Why is it important to follow a Brand Style Guide for your
                   business?
@@ -72,9 +73,169 @@
               </div>
             </a>
           </div>
-          <!-- ? List of blogs -->
+          <!-- ? INFORMATIONAL second row of the blog-->
+          <!-- ? INFORMATIONAL First Item -->
+          <div class="blog-card">
+            <a href="" class="">
+              <img src="img/img2.jpg" alt="" class="">
+              <div class="px-4 pb-6">
+                <h2
+                  class="card-heading"
+                >
+                  Why is it important to follow a Brand Style Guide for your
+                  business?
+                </h2>
+                <p class="text-gen pb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur fugiat molestias, minima odio ut perspiciatis nemo aperiam. Explicabo, quis veritatis!</p>
+                <div class="flex items-center">
+                  <img
+                    src="img/author1.jpg"
+                    alt=""
+                    class="w-9 h-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="font-bold text-prim">John Doe</h6>
+                    <p class="text-xs text-gen">Brant specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- ? INFORMATIONAL Second Item  -->
+          <div class="blog-card">
+            <a href="" class="">
+              <img src="img/img3.jpg" alt="" class="">
+              <div class="px-4 pb-6">
+                <h2
+                  class="card-heading"
+                >
+                  Why is it important to follow a Brand Style Guide for your
+                  business?
+                </h2>
+                <p class="text-gen pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laboriosam provident at dolore, voluptas unde porro necessitatibus eum ducimus enim!</p>
+                <div class="flex items-center">
+                  <img
+                    src="img/author1.jpg"
+                    alt=""
+                    class="w-9 h-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="font-bold text-prim">John Doe</h6>
+                    <p class="text-xs text-gen">Brant specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- ? INFORMATIONAL Third Item   -->
+          <div class="blog-card">
+            <a href="" class="">
+              <img src="img/img4.jpg" alt="" class="">
+              <div class="px-4 pb-6">
+                <h2
+                  class="card-heading"
+                >
+                  Why is it important to follow a Brand Style Guide for your
+                  business?
+                </h2>
+                <p class="text-gen pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi praesentium et obcaecati veritatis culpa nostrum inventore voluptatibus, assumenda facilis!</p>
+                <div class="flex items-center">
+                  <img
+                    src="img/author1.jpg"
+                    alt=""
+                    class="w-9 h-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="font-bold text-prim">John Doe</h6>
+                    <p class="text-xs text-gen">Brant specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- ? INFORMATIONAL row 2 of the blog post -->
+          <!-- ? INFORMATIONAL item 1 -->
+          <div class="col-span-2">
+            <div class="blog-card">
+              <a href="" class="">
+                <img src="img/img4.jpg" alt="" class="h-72 w-full">
+                <div class="px-4 pb-6">
+                  <h2
+                    class="card-heading"
+                  >
+                    Why is it important to follow a Brand Style Guide for your
+                    business?
+                  </h2>
+                  <p class="text-gen pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi praesentium et obcaecati veritatis culpa nostrum inventore voluptatibus, assumenda facilis!</p>
+                  <div class="flex items-center">
+                    <img
+                      src="img/author1.jpg"
+                      alt=""
+                      class="w-9 h-9 rounded-full"
+                    />
+                    <div class="pl-3">
+                      <h6 class="font-bold text-prim">John Doe</h6>
+                      <p class="text-xs text-gen">Brant specialist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- ? INFORMATIONAL item 2 -->
+          <div class="blog-card">
+            <a href="" class="">
+              <img src="img/img4.jpg" alt="" class="">
+              <div class="px-4 pb-6">
+                <h2
+                  class="card-heading"
+                >
+                  Why is it important to follow a Brand Style Guide for your
+                  business?
+                </h2>
+                <p class="text-gen pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi praesentium et obcaecati veritatis culpa nostrum inventore voluptatibus, assumenda facilis!</p>
+                <div class="flex items-center">
+                  <img
+                    src="img/author1.jpg"
+                    alt=""
+                    class="w-9 h-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="font-bold text-prim">John Doe</h6>
+                    <p class="text-xs text-gen">Brant specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+         
+          
+        </div>
+      </section>
+       <!-- ? INFORMATIONALSubscrive section -->
+      <section class="">
+        <div class="text-center py-14 " ">
+          <h1 class="text-5xl fot-bold font-title text-prim">
+            Subscrive to Our<br />
+            <span class="text-sec">Blog</span>
+          </h1>
+          <p class="text-prim max-w-xs mx-auto py-6">
+            Please subscribe to get regular updates and featured news through your email!
+          </p>
+          <input
+            class="bg-our-bg mx-auto px-6 py-2 rounded-3xl shadow-inner focus:outline-none focus:ring-2 ring-sec"
+            type="email"
+            placeholder="Email Address"
+          />
+          <input type="submit" value="Submit" class="-ml-8 px-8 py-2 rounded-3xl bg-sec text-white cursor-pointer
+          hover:bg-blue-800 focus:ring-1">
         </div>
       </section>
     </div>
+    <footer class="bg-prim">
+      <div class="flex text-white px-12 py-8 font-title font-extrabold justify-between tracking-wider">
+        <p class=""> TailwindCss</p>
+        <p class="">All rights is reserved © 2022</p>
+      </div>
+    </footer>
   </body>
 </html>
