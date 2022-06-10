@@ -7,17 +7,14 @@
     <title>Blog Landing Page</title>
     <link rel="stylesheet" href="css/style.css" />
     <script>
-     //function that generates a number between 0 and 10000
-      function getRandomInt(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
+     
     </script>
   </head>
   <body class="font-body">
     <div class="container px-4 mx-auto max-w-5xl">
       <!-- ? INFORMATIONAL header -->
       <div class="text-center py-14 cursor-pointer" ">
-        <h1 class="text-5xl fot-bold font-title text-sec">
+        <h1 class="lg:text-5xl sm:text-4xl text-3xl fot-bold font-title text-sec">
           Latest Blog<br />
           <span class="text-prim">Posts</span>
         </h1>
@@ -32,17 +29,17 @@
       </div>
       <section class="main">
         <!-- ? INFORMATIONAL Grid Element -->
-        <div class="grid grid-cols-3 gap-y-16 gap-x-12">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-y-16 md:gap-y-12 gap-y-8  lg:gap-x-12 gap-x-12">
           <!-- ? INFORMATIONAL Featured Blog, First row -->
-          <div class="col-span-3">
-            <a
+          <div class="lg:col-span-3 md:col-span-2 col-span-1">
+            <div
               href="#"
-              class="border border-gray-100 flex rounded-3xl overflow-hidden hover:shadow-lg transition duration-300"
+              class="border border-gray-100 md:flex  rounded-3xl overflow-hidden hover:shadow-lg transition duration-300"
             >
-              <div class="w-1/2">
+              <div class="md:w-1/2 w-full">
                 <img src="img/img1.jpg" alt="" />
               </div>
-              <div class="w-1/2 p-7">
+              <div class="md:w-1/2 w-full sm:px-7 sm:py-7 px-2 py-2">
                 <span class="px-3 py-1 bg-our-bg rounded text-sec text-xs"
                   >FEATURED</span
                 >
@@ -59,7 +56,7 @@
                   becomes their key document, which serves as serves as a guide
                   to create a variety of content for brand marketing.
                 </p>
-                <div class="flex items-center">
+                <div class="flex items-center ">
                   <img
                     src="img/author1.jpg"
                     alt=""
@@ -71,14 +68,14 @@
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
           <!-- ? INFORMATIONAL second row of the blog-->
           <!-- ? INFORMATIONAL First Item -->
           <div class="blog-card">
             <a href="" class="">
               <img src="img/img2.jpg" alt="" class="">
-              <div class="px-4 pb-6">
+              <div class="px-2 lg:px-4 sm:pb-6 pb-2">
                 <h2
                   class="card-heading"
                 >
@@ -104,7 +101,7 @@
           <div class="blog-card">
             <a href="" class="">
               <img src="img/img3.jpg" alt="" class="">
-              <div class="px-4 pb-6">
+              <div class="px-2 lg:px-4 sm:pb-6 pb-2">
                 <h2
                   class="card-heading"
                 >
@@ -130,7 +127,7 @@
           <div class="blog-card">
             <a href="" class="">
               <img src="img/img4.jpg" alt="" class="">
-              <div class="px-4 pb-6">
+              <div class="px-2 lg:px-4 sm:pb-6 pb-2">
                 <h2
                   class="card-heading"
                 >
@@ -154,11 +151,11 @@
           </div>
           <!-- ? INFORMATIONAL row 2 of the blog post -->
           <!-- ? INFORMATIONAL item 1 -->
-          <div class="col-span-2">
+          <div class="lg:col-span-2 col-span-1">
             <div class="blog-card">
               <a href="" class="">
                 <img src="img/img4.jpg" alt="" class="h-72 w-full">
-                <div class="px-4 pb-6">
+                <div class="px-2 lg:px-4 sm:pb-6 pb-2">
                   <h2
                     class="card-heading"
                   >
@@ -185,7 +182,7 @@
           <div class="blog-card">
             <a href="" class="">
               <img src="img/img4.jpg" alt="" class="">
-              <div class="px-4 pb-6">
+              <div class="px-2 lg:px-4 sm:pb-6 pb-2">
                 <h2
                   class="card-heading"
                 >
@@ -214,7 +211,7 @@
        <!-- ? INFORMATIONALSubscrive section -->
       <section class="">
         <div class="text-center py-14 " ">
-          <h1 class="text-5xl fot-bold font-title text-prim">
+          <h1 class="lg:text-5xl sm:text-4xl text-3xl fot-bold font-title text-prim">
             Subscrive to Our<br />
             <span class="text-sec">Blog</span>
           </h1>
@@ -232,7 +229,7 @@
       </section>
     </div>
     <footer class="bg-prim">
-      <div class="flex text-white px-12 py-8 font-title font-extrabold justify-between tracking-wider">
+      <div class="flex flex-col sm:flex-row jutisfy-center items-center text-white px-12 py-8 font-title font-extrabold sm:justify-between tracking-wider">
         <p class=""> TailwindCss</p>
         <p class="">All rights is reserved © 2022</p>
       </div>
