@@ -31,7 +31,7 @@
 
 ## Description
 
-This is a simple Blog post Vanilla JS designed with the FrameWork Tailwind CSS
+This is a simple Blog post user Friendly responsive Vanilla JS page designed with the FrameWork Tailwind CSS.
 
 ---
 
