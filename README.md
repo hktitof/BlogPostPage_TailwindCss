@@ -15,7 +15,7 @@
 
 ### Project Link :
 
-- Speed Typing - [click here](blog-post-page-tailwind-css.vercel.app)
+- Blog Post - [click here](blog-post-page-tailwind-css.vercel.app)
 
 ---
 
